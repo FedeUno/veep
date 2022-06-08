@@ -1,0 +1,81 @@
+Node es un motor que corre javascript.
+
+Asi como php es un motor que corre php
+
+La particularidad que tiene, ya hablando de javascript.
+
+Es que fue pensado para correr como single thread
+
+Hay dos tipo de abstracciones en los lenguajes.
+
+Sincronica
+Asincronica.
+
+la sincronica
+
+let contenido = readFile('')
+
+por otro lado la asincronica
+
+let handler = readFile('...')
+
+if (handler == CODIGO_YA_LLENO_BUFFER????) {
+   voy a la memoria donde esta el contenido.
+} 
+
+Cada 10 o 100 Milisegundos, preguntar si ya termino
+(pooling)
+
+let handler = readFile('')
+RegistrarUnCallBack(handler, 'ON_FILE_READ_FINISH', leerBuffer)
+
+function leerBuffer() {
+   Puedo leer el contenido del archivo
+}
+
+CUIDADO CON LAS ABSTRACCIONES SINCRONICAS, X QUE AVECES NECESITAMOS
+TRABAJAR MAS CERCANO A COMO ES EL SISTEMA OPERATIVO.
+
+Antecedente en el que se basa esto es nginx (http server)
+
+AHORA SI EN JAVASCRIPT
+----------------------
+
+NO PUEDO HACER leerArchivo() y esperar un resultado.
+
+readFile('archivo', 'UTF-8', leerContenido)
+
+function leerContenido(err, contenido) {
+
+}
+
+--------------------------------------------------------------------------
+
+La promsesa, es SOLO una forma sintactica para encapsular todo lo que
+asincronico.
+
+Paso1, paso2, paso3, paso4(ASYNC), paso5, paso6 .... Termino todo
+lo sincronico.
+
+Como bien sabemos por lo que se acaba de explicar.
+
+Paso4 Tiene que registrar un callback.
+Ese callback se va a invocar SOLO cuando termine todo lo sincronico.
+Mientras tanto, permaece en una cola de callbacks.
+
+
+Que son las promesas ?
+Las vamos a ver en estas clases.
+
+Son SOLO una sintaxis diferente para expresar los callbacks.
+
+
+
+
+
+
+
+
+
+
+
