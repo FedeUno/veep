@@ -4,6 +4,9 @@ function estaFuncionEsAsincronica(callBack) {
 
 function yoSoyElCallBack() {
    console.log('Estoy dentro del callback')
+   return function() {
+      console.log('epaaaaaaaaaaaaaa')
+   }
 }
 
 console.log('vamos a explicar el setTimeout')

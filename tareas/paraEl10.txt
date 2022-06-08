@@ -1,0 +1,11 @@
+Ver si podemos describir para que sirve 
+las keywords, [var, let, const]
+
+Lo mas detallado posible. Sobre todo el problema del scope.
+
+arteysoft@gmail.com
+
+De curso son, etc. Tambien detallado.
+
+
+
