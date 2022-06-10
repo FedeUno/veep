@@ -1,0 +1,26 @@
+lumno: Lucas Acuña
+
+A partir de EcmaScript versión 6, se agregan características nuevas al lenguaje JavaScript, 
+una de ellas la posibilidad de definir el ámbito de las variables en bloques con las 
+palabras clave let y const.
+
+Antes de ES6 las variables se definían con la palabra clave "var", las declaraciones con var pueden tener
+ un ámbito de global, que permite declarar una variable por fuera del scope de una función y que pueda 
+estar disponible para su uso dentro y fuera de la función.
+"var" también puede tener un ámbito local si una variable es definida dentro del scope de una función, 
+solo será conocida dentro de la función,
+si la variable quiere ser accedida fuera de la función el resultado será undefined.
+Las variables declaradas con var pueden ser redeclaradas sin ningún problema.
+
+"let" es ahora la notación preferida para la declaración de variables, porque let tiene un ámbito de bloque, 
+una variable que esta definida con let dentro de un scope solo esta disponible para su uso dentro de ese scope. 
+A diferencia de var, let no puede ser redeclarado dentro de un mismo ámbito.
+Otra diferencia es que let no se inicializa como undefined sino tiene valores, 
+como si pasa con var, si se intenta utilizar una variable let antes de inicializarla 
+se obtiene un Error de Referencia.
+
+las variables declaradas con la notación "const" mantienen valores constantes.
+Las declaraciones const tienen un ámbito de bloque, solo pueden ser accedidas dentro del bloque donde fueron declaradas. Al ser constantes no pueden ser editadas ni pueden volver a declararse, entonces toda variable declarada con const debe ser iniciada cuando se declara.
+
+Saludos Cordiales
+Lucas

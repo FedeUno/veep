@@ -1,0 +1,5 @@
+let define una variable que justamente puede cambiar. 
+Se puede usar en el nivel en el que se define y en 'hijos'
+const define una constante, o sea, un valor que no puede cambiar. 
+Se puede usar en el nivel en el que se define y en 'hijos'
+var es como let pero se puede acceder de forma global no importa donde se defina, tanto en 'hijos' como en 'padres'
