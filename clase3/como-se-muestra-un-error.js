@@ -1,0 +1,1 @@
+console.log(new Error('Fallo porque lo hice asi'))

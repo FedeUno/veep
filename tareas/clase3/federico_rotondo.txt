@@ -1,0 +1,23 @@
+
+asyncForLoop(2000, (nroIteracion, next) => {
+  console.log(nroIteracion) 
+  let usuario = genUsu()
+  let usuarioJSON = JSON.stringify(usuario)
+  let pathArchivo = [
+   '/var/tmp/veep/',
+   usuario.id,
+   '.json'].join('')
+
+   fs.writeFile(pathArchivo, usuarioJSON, 'utf-8', (err) => {
+    if (err) {
+       console.log(err)
+       return
+    }
+ })
+   setTimeout(next, 200)
+}, (err) => {
+   if (err) {
+      console.log('termino todo, verificando error')
+      console.log(err)
+   }
+})
