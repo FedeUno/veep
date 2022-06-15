@@ -8,8 +8,9 @@ fs.readdir(pathFolder, (err, arrFiles) => {
    let cantIteraciones = arrFiles.length
    asyncForLoop(cantIteraciones, (idx, next, abort) => {
       let archivoActual = pathFolder.concat(arrFiles[idx])
-      fs.readFile(archivoActual, 'utf-8' ,(err, data) => {
+      fs.readFile(archivoActual, 'utf-8', (err, data) => {
          console.log(data)
+         next()
       })
    }, (err) => {
       console.log('termino el proceso')

@@ -10,9 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@arteysoft/asyncforloop": "^1.0.0",
     "faker": "^5.5.3",
+    "mongodb": "^4.7.0",
     "underscore": "^1.13.4",
-    "uuid": "^8.3.2",
-    "@arteysoft/asyncforloop": "^1.0.0"
+    "uuid": "^8.3.2"
   }
 }

@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient
-const url = 'mongodb://127.0.0.1:27017'
+const url = 'mongodb://137.184.1.230:27017'
 
 let objDeprecateCfg = {
     useUnifiedTopology: true,
